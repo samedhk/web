@@ -55,13 +55,16 @@ When we substitute \(x(t)=y(t)\), and do it for a single signal, we get the auto
 ## Fourier Series
 ### Trigonometric Fourier Series
 Any periodic signal, continuous or disctere, can be expressed as sum of sinusoidal signals with periods that are integral multiples of the period of given signals. Hence a periodic signal \(x(t)\) can be expressed as
+
 \[x(t)=A_0+\sum_{n=1}^N\left(A_n\cos{\left(2\pi\frac{n}{T}t\right)}+B_n\sin{\left(2\pi\frac{n}{T}t\right)}\right)\]
 
 ### Exponential Fourier Series
 Since trigonometric quantities are very closely related with exponentials, it is possible to generalise the trigonometric form of the Fourier Series to an exponential one.
+
 \[x(t)=\sum_{n=-\infty}^\infty C_ne^{jnt}\]
 
 The expression for \( C_n \) can be found to be:
+
 \[C_n=\frac{1}{2\pi}\int_{-\pi}^\pi x(t)e^{-jnt}dt\]
 
 ## Fourier Transform

@@ -15,7 +15,7 @@ Some standard signals are shown.
 ## Systems
 A system can be viewed as any process that results in the transformation of signals. Thus, a system has an input signal and an output signal which is related to the input through the system transformation.
 
-**Impulse response** of a system is the response or output of a system when the input given is an impulse signal. In the below system, $h(t)$ is the impulse response of the system.
+**Impulse response** of a system is the response or output of a system when the input given is an impulse signal. In the below system, \(h(t)\) is the impulse response of the system.
 
 ![system](system.svg)
 
@@ -29,11 +29,11 @@ Just like signals, systems can also be classified based on several properties. T
 
 Systems which are linear and time invariant can be scaled, superposed and transposed with respect to time. These properties provide the flexibility and convenience of operating on the corresponding systems giving them a special status. Such systems are called Linear Time Invariant (LTI) Systems.
 ## Convolution
-If a system has impulse response $h(t)$ and a signal $x(t)$ is passed through the system, the output of the system, $y(t)$, is the convolution $x(t)$ and $h(t)$.
+If a system has impulse response \(h(t)\) and a signal \(x(t)\) is passed through the system, the output of the system, \(y(t)\), is the convolution \(x(t)\) and \(h(t)\).
 
 $$y(t)=x(t)\ast h(t)=\int_{\tau=-\infty}^{\infty}x(\tau)h(t-\tau)d\tau$$
 
-The same operation is also valid for disctere signals. The convolution of discrete signals $x[n]$ and $h[n]$ will be $y[n]$.
+The same operation is also valid for disctere signals. The convolution of discrete signals \(x[n]\) and \(h[n]\) will be \(y[n]\).
 
 $$y[n]=x[n]\ast h[n]=\sum_{k=-\infty}^{\infty}x[k]h[n-k]$$
 

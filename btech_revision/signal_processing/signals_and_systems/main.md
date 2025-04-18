@@ -32,15 +32,20 @@ Systems which are linear and time invariant can be scaled, superposed and transp
 
 ## Convolution
 If a system has impulse response \(h(t)\) and a signal \(x(t)\) is passed through the system, the output of the system, \(y(t)\), is the convolution \(x(t)\) and \(h(t)\).
+
 \[y(t)=x(t)\ast h(t)=\int_{\tau=-\infty}^{\infty}x(\tau)h(t-\tau)d\tau\]
 
 The same operation is also valid for disctere signals. The convolution of discrete signals \(x[n]\) and \(h[n]\) will be \(y[n]\).
-\[y[n]=x[n]\ast h[n]=\sum_{k=-\infty}^{\infty}x[k]h[n-k]\]
+
+\[
+y[n]=x[n]\ast h[n]=\sum_{k=-\infty}^{\infty}x[k]h[n-k]
+\]
 
 Convolution is a commutative, distributive and associative operation.
 
 ### Correlation
 Correlation is another operation used for signals, that is used to check the similarity between signals with respect to the time delay. The two types of correlateions are 'auto-correlation' and 'cross-correlation'. Mathematically, cross-correlation is given by
+
 \[\mathcal{R}_{xy}(t)=\sum_{-\infty}^{\infty}x(\tau)y(\tau-t)\]
 
 When we substitute \(x(t)=y(t)\), and do it for a single signal, we get the auto-correlation. Cross-correlation is not commutative or associative but it is distributive. It follows properties like:

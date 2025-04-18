@@ -45,7 +45,7 @@ Correlation is another operation used for signals, that is used to check the sim
 $$\mathcal{R}_{xy}(t)=\sum_{-\infty}^{\infty}x(\tau)y(\tau-t)$$
 
 When we substitute $x(t)=y(t)$, and do it for a single signal, we get the auto-correlation. Cross-correlation is not commutative or associative but it is distributive. It follows properties like:
-- $R_{xy}(m)=R_{yx}(-m)$
+- $\mathcal{R}_{xy}(m)=R_{yx}(-m)$
 - $|\mathcal{R}_{xy}(m)|\le\sqrt{\mathcal{R}_{xx}(0)\mathcal{R}_{yy}(m)}=\sqrt{E_xE_y}$
 
 ## Fourier Series

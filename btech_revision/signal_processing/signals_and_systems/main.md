@@ -69,12 +69,14 @@ $$C_n=\frac{1}{2\pi}\int_{-\pi}^\pi x(t)e^{-jnt}dt$$
 The Fourier transforms signals from time domain to frequency domain. It works for continuous as well as discrete signals, and always gives a continuous output. Fourier Transform of continuous signals is aperiodic, and for discrete signals, it is periodic.
 
 #### Continuous Time Fourier Series
+
 $$\begin{split}
 \mathcal{F}\left(x(t)\right)=X(f)&=\int_{-\infty}^{\infty}x(t)e^{-j2\pi ft}dt\\
 \mathcal{F}^{-1}(X(f))=x(t)&=\int_{-\infty}^{\infty}X(f)e^{j2\pi ft}df
 \end{split}$$
 
 #### Discrete Time Fourier Series
+
 $$\begin{split}
 \mathcal{F}\left(x[n]\right)=X(f)&=\sum_{-\infty}^{\infty}x[n]e^{-j2\pi fn}\\
 \mathcal{F}^{-1}(X(f))=x[n]&=\int_{0}^{2\pi}X(f)e^{j2\pi fn}df

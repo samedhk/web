@@ -10,12 +10,14 @@ Signals are functions of independent variables. Signals can be classified in sev
 - Energy and Power Signals
 
 Some standard signals are shown.
+
 ![standard_signals](standard_signals.svg)
 
 ## Systems
 A system can be viewed as any process that results in the transformation of signals. Thus, a system has an input signal and an output signal which is related to the input through the system transformation.
 
 **Impulse response** of a system is the response or output of a system when the input given is an impulse signal. In the below system, \(h(t)\) is the impulse response of the system.
+
 ![system](system.svg)
 
 Just like signals, systems can also be classified based on several properties. These properties are:

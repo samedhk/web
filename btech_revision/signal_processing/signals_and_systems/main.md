@@ -77,43 +77,63 @@ $$\begin{split}
 \end{split}$$
 
 #### Discrete Time Fourier Series
-$$\begin{split}
-\mathcal{F}\left(x[n]\right)=X(f)&=\sum_{-\infty}^{\infty}x[n]e^{-j2\pi fn}\\
-\mathcal{F}^{-1}(X(f))=x[n]&=\int_{0}^{2\pi}X(f)e^{j2\pi fn}df
-\end{split}$$
+$$\mathcal{F}\left(x[n]\right)=X(f)&=\sum_{-\infty}^{\infty}x[n]e^{-j2\pi fn}$$
+$$\mathcal{F}^{-1}(X(f))=x[n]&=\int_{0}^{2\pi}X(f)e^{j2\pi fn}df$$
 
 ### Dirichlet Condition
 Fourier Transform for a signal exist only if it satisfies the Dirichlet Conditions.
-- Signal should be absolutely integrable or should have finite energy $$ \int_{-\infty}^\infty|x(t)|dt<\infty $$
+- Signal should be absolutely integrable or should have finite energy
+
+$$ \int_{-\infty}^\infty|x(t)|dt<\infty $$
+
 - Signal should have finite number of discontinuities
 - Signal should have finite number of maxima and minima
 
 ### Properties of Fourier Transform
 - Linearity
+
 $$\mathcal{F}\left(\alpha x_1(t)+\beta x_2(t)\right)=\alpha X_1(f)+\beta X_2(f)$$
+
 - Time Reversal
+
 $$\mathcal{F}(x(-t))=X(-f)$$
+
 - Conjugation
+
 $$\mathcal{F}(x^\ast(t))=X^\ast(f)$$
+
 - Time Shifting
+
 $$\mathcal{F}(x(t-t_0))=e^{-j2\pi ft_0}X(f)$$
+
 - Time Scaling
+
 $$\mathcal{F}(x(at))=\frac{1}{|a|}X\left(\frac{f}{a}\right)$$
+
 - Frequency Shifting
+
 $$\mathcal{F}(e^{\pm j2\pi f_0t}x(t))=X(f\mp f_0)$$
+
 - Convolution in Time
+
 $$\mathcal{F}(x_1(t)*x_2(t))=X_1(f)X_2(f)$$
+
 - Convolution in Frequency
+
 $$\mathcal{F}(x_1(t)x_2(t))=\frac{1}{2\pi}\left[X_1(j\omega)*X_2(j\omega)\right]$$
+
 - Differentiation in Time
-$$\begin{split}
-\mathcal{F}\left(\frac{dx(t)}{dt}\right)&=j\omega X(j\omega)\\
-\mathcal{F}\left(\frac{d^kx(t)}{dt^k}\right)&=(j\omega)^kX(j\omega)
-\end{split}$$
+
+$$\mathcal{F}\left(\frac{dx(t)}{dt}\right)&=j\omega X(j\omega)$$
+
+$$\mathcal{F}\left(\frac{d^kx(t)}{dt^k}\right)&=(j\omega)^kX(j\omega)$$
+
 - Differentiation in Frequency
-$$\begin{split}
-\mathcal{F}\left(tx(t)\right)&=j\frac{dX(j\omega)}{d\omega}\\
-\mathcal{F}\left(t^nx(t)\right)&=j^n\frac{d^nX(j\omega)}{d\omega^n}
-\end{split}$$
+
+$$\mathcal{F}\left(tx(t)\right)&=j\frac{dX(j\omega)}{d\omega}$$
+
+$$\mathcal{F}\left(t^nx(t)\right)&=j^n\frac{d^nX(j\omega)}{d\omega^n}$$
+
 - Parseval's Theorem
+
 $$\int_{-\infty}^\infty\left|x(t)\right|^2dt=\frac{1}{2\pi}\int_{-\infty}^\infty\left|X(f)\right|^2df=\int_{-\infty}^\infty\left|X(2\pi f)\right|^2df$$

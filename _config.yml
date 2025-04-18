@@ -1,2 +1,9 @@
 title: Supik Talka
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default

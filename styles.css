@@ -1,0 +1,262 @@
+/* General Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #113366;
+    /*text-decoration: underline;*/
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #0066cc;
+    /*border-bottom: 2px solid #0066cc;*/
+}
+
+/* Subnavigation for Research Subsections */
+.subnav {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #ccc;
+    /*margin: 1rem 0;*/
+}
+
+.subnav ul {
+    display: flex;
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.subnav a {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    /*border-bottom: 2px solid transparent;*/
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.subnav a.active,
+.subnav a:hover {
+    color: #0066cc;
+    /*border-bottom-color: #0066cc;*/
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 1.5rem auto 3rem;
+    padding: 0 1rem;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /*color: #0066cc;*/
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    /*margin-bottom: 0.5rem;*/
+    color: #112244;
+}
+
+/* Profile Photo on Homepage */
+.profile-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+}
+
+/* Contact Details */
+.contact-details {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.3rem;
+    font-style: italic;
+}
+
+/* Descriptions, Bios, Project and Journal Text */
+.description,
+.entry-content,
+.about-me p,
+.project .description,
+.journal-entry-preview .entry-snippet {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    color: #333;
+}
+
+/* Lists for metadata */
+.project-meta,
+.project-meta li {
+    list-style: none;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+}
+
+.project-meta li {
+    max-width: 700px;
+}
+
+/* Project & Publication Blocks */
+.project,
+.publication,
+.journal-entry-preview {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    /*box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);*/
+    border-left: 4px solid #0066cc;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project:hover,
+.publication:hover,
+.journal-entry-preview:hover {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+.publication h2 a,
+.project h2 a,
+.journal-entry-preview h2 a {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.publication p,
+.project p,
+.journal-entry-preview p {
+    color: #444;
+}
+
+/* Journal Dates */
+.entry-date {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Resume Link */
+.resume-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.resume-link:hover,
+.resume-link:focus {
+    background-color: #0066dd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar,
+    .subnav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    main {
+        margin: 1rem auto 2rem;
+        padding: 0 0.75rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}

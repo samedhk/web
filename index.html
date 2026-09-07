@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samedh Sachin Kari | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-[#f7f6f2] text-[#242424] antialiased">
+
+    <div class="reading-progress"></div>
+
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#about" class="brand">
+                SAMEDH KARI
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars menu-open"></i>
+                <i class="fa-solid fa-xmark menu-close"></i>
+            </label>
+
+            <div class="desktop-nav">
+                <a href="#about">Home</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#more">More</a>
+            </div>
+
+            <div class="mobile-nav">
+                <a href="#about">Home</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#more">More</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="hero section-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">ELECTRICAL ENGINEER · EX-ISRO SCIENTIST</p>
+                    <h1>Samedh Sachin Kari</h1>
+                    <p class="hero-description">
+                        Electrical engineer working at the intersection of <br>
+                        <span>sensing, estimation and detection, signal processing, control systems, and autonomous space systems.</span>
+                    </p>
+                    <p class="hero-meta">
+                        M.S.E. Electrical Engineering · University of Pennsylvania
+                    </p>
+                    <div class="hero-actions">
+                        <a href="assets/resume.pdf" target="_blank" class="button button-primary">
+                            <i class="fa-regular fa-file-lines"></i> View Resume
+                        </a>
+                        <a href="mailto:samedhk04@gmail.com" class="button button-secondary">
+                            Get in touch
+                        </a>
+                    </div>
+                    <div class="contact-line">
+                        <span>Philadelphia, PA</span>
+                        <span class="separator">·</span>
+                        <a href="tel:+12679345964">+1 (267) 934-5964</a>
+                        <span class="separator">·</span>
+                        <a href="mailto:samedhk04@gmail.com">samedhk04@gmail.com</a>
+                        <span class="separator">·</span>
+                        <a href="https://www.linkedin.com/in/samedh">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="hero-avatar-container">
+                    <img src="profile.jpeg" alt="Samedh Sachin Kari Profile Photo" class="hero-avatar">
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-container section">
+            <div class="section-heading">
+                <span>01</span>
+                <h2>Education</h2>
+            </div>
+            <div class="education-grid">
+                <article class="education-card">
+                    <div class="card-top">
+                        <span class="date">May 2028</span>
+                    </div>
+                    <h3>University of Pennsylvania</h3>
+                    <p class="degree">
+                        Master of Science in Engineering, <br> Electrical Engineering
+                    </p>
+                </article>
+
+                <article class="education-card">
+                    <div class="card-top">
+                        <span class="date">June 2025</span>
+                    </div>
+                    <h3><a href="#">Indian Institute of Space Science and Technology</a></h3>
+                    <p class="degree">
+                        Bachelor of Technology, <br> Electronics and Communication Engineering (Avionics)
+                    </p>
+                    <p class="coursework">
+                        <strong>CGPA:</strong> 3.29 / 4
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-muted">
+            <div class="section-container">
+                <div class="section-heading">
+                    <span>02</span>
+                    <h2>Experience</h2>
+                </div>
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <details class="experience-dropdown">
+                                <summary>
+                                    <div class="experience-header-inner">
+                                        <div>
+                                            <p class="organization"><a href="#">Space Applications Centre, ISRO</a></p>
+                                            <h3>Scientist / Engineer — 'SC'</h3>
+                                            <p class="role">Sensor Development Area</p>
+                                        </div>
+                                        <div class="exp-meta-right">
+                                            <span class="location"><i class="fa-solid fa-location-dot"></i> Ahmedabad, India</span>
+                                            <span class="date">Jul 2025 — Jul 2026</span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="experience-body">
+                                    <ul>
+                                        <li style="text-align: justify;">
+                                            Developed a novel state-estimation filter for LiDAR-based 6-DOF spacecraft pose tracking that enabled relative navigation with <strong>1 mm position and 1° attitude accuracy at a 100 m operating range</strong>, while developing target-adaptive LiDAR scanning strategies that significantly reduced scan and implementing real-time LiDAR scanning, pose estimation, and filtering software in Python and C++.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <details class="experience-dropdown">
+                                <summary>
+                                    <div class="experience-header-inner">
+                                        <div>
+                                            <p class="organization"><a href="#">U. R. Rao Satellite Centre, ISRO</a></p>
+                                            <h3>Research Project Intern</h3>
+                                            <p class="role">Control Dynamics Design Group</p>
+                                        </div>
+                                        <div class="exp-meta-right">
+                                            <span class="location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                                            <span class="date">Jan 2025 — Apr 2025</span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="experience-body">
+                                    <ul>
+                                        <li style="text-align: justify;">
+                                            Developed an ICP-based pose estimation algorithm for target-chaser systems to determine 6-DOF position and orientation from dense point clouds, applied Kalman filtering to refine pose and velocity estimates for improved stability and noise resilience while achieving <strong>5 mm position and 3° orientation accuracy</strong>, and integrated the resulting pose and motion estimates as control inputs within a target-chaser simulation using C++.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <details class="experience-dropdown">
+                                <summary>
+                                    <div class="experience-header-inner">
+                                        <div>
+                                            <p class="organization"><a href="#">U. R. Rao Satellite Centre, ISRO</a></p>
+                                            <h3>Summer Research Intern</h3>
+                                            <p class="role">Control Dynamics Design Group</p>
+                                        </div>
+                                        <div class="exp-meta-right">
+                                            <span class="location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                                            <span class="date">May 2024 — Jul 2024</span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="experience-body">
+                                    <ul>
+                                        <li style="text-align: justify;">
+                                            Developed a comprehensive mathematical model for every component of a Flash LiDAR system, implemented the model as a Finite-Difference Time-Domain (FDTD) simulation in C, and created an original LiDAR data clustering and preprocessing algorithm that discarded approximately <strong>65% of noisy data early</strong> to accelerate subsequent computations.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <details class="experience-dropdown">
+                                <summary>
+                                    <div class="experience-header-inner">
+                                        <div>
+                                            <p class="organization"><a href="#">Defence Institute of Advanced Technology, DRDO</a></p>
+                                            <h3>Summer Research Intern</h3>
+                                            <p class="role">Radar Systems Laboratory</p>
+                                        </div>
+                                        <div class="exp-meta-right">
+                                            <span class="location"><i class="fa-solid fa-location-dot"></i> Pune, India</span>
+                                            <span class="date">May 2023 — Jul 2023</span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="experience-body">
+                                    <ul>
+                                        <li style="text-align: justify;">
+                                            Authored and published a review paper examining the evolution of radar and remote sensing technologies, with a focus on advancements in emerging photonic radar systems, supported by research into their underlying technologies and development.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section section-container">
+            <div class="section-heading">
+                <span>03</span>
+                <h2>Publication</h2>
+            </div>
+            <article class="publication-card">
+                <div class="publication-meta">
+                    IEEE Geoscience and Remote Sensing Magazine
+                    <span>·</span>
+                    March 2024
+                </div>
+                <h3>
+                    <a href="https://doi.org/10.1109/mgrs.2023.3329928">Evolutionary Developments of Today's Remote Sensing Radar Technology — Right From the Telemobiloscope: A Review</a>
+                </h3>
+                <p class="authors">
+                    <strong>Samedh Sachin Kari</strong>,
+                    A. Arockia Bazil Raj and Balasubramanian. K
+                </p>
+            </article>
+        </section>
+
+        <section id="achievements" class="section section-muted">
+            <div class="section-container">
+                <div class="section-heading">
+                    <span>04</span>
+                    <h2>Scholastic Achievements</h2>
+                </div>
+                <div class="achievement-list">
+                    <article>
+                        <span class="achievement-number">01</span>
+                        <p>
+                            <a href="https://samedhk.github.io/web/Certificates/GATE_2024_ScoreCard.pdf"><strong>GATE 2024 (ECE)</strong></a> —
+                            All India Rank 452 out of 63,092 candidates (99.28 percentile).
+                        </p>
+                    </article>
+                    <article>
+                        <span class="achievement-number">02</span>
+                        <p>
+                            <a href="#"><strong>JEE 2021</strong></a> —
+                            Top 0.6% among 1.3 million candidates overall, with a 99.99 subject percentile in Mathematics.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="achievement-number">03</span>
+                        <p>
+                            <a href="#"><strong>Regional Mathematics Olympiad 2018</strong></a> —
+                            Awardee, placing in the top 30 in Maharashtra and top 300 among 10,000+ candidates across India.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="achievement-number">04</span>
+                        <p>
+                            <a href="#"><strong>International Youth Math Challenge</strong></a> —
+                            Gold Honour, placing in the top 1% of international participants.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="more" class="section section-container">
+            <div class="section-container">
+                <div class="section-heading">
+                    <span>05</span>
+                    <h2>Beyond Engineering</h2>
+                </div>
+                <div class="interest-grid">
+                    <article class="interest-card">
+                        <span class="interest-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </span>
+                        <h3>Music</h3>
+                        <p>
+                            Level 4 certification in Indian Classical Music by Gandharva Mahavidyalaya. Proficient in harmonium and flute, with an interest in supporting research on the 10-finger Dhrupad Flute.
+                        </p>
+                        <p>
+                            Resources and Inventory Manager at Neptunes Music Club, IIST. Performed and competed with the band Aaroh in intercollege competitions.
+                        </p>
+                    </article>
+
+                    <article class="interest-card">
+                        <span class="interest-icon">
+                            <i class="fa-solid fa-om"></i>
+                        </span>
+                        <h3>Sanskrit</h3>
+                        <p>
+                            Studied Sanskrit as a second language through 10 + 2 education. An avid reader and enthusiast of the language, with plans to pursue it further.
+                        </p>
+                    </article>
+
+                    <article class="interest-card">
+                        <span class="interest-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </span>
+                        <h3>Finance</h3>
+                        <p>
+                            Chief Treasurer and Accountant for Dhanak 2024, the cultural festival of IIST.
+                        </p>
+                        <p>
+                            Founding member of Money Minds Club, the finance club of IIST.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="tel:+12679345964" aria-label="Call">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="mailto:samedhk04@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/samedh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p>© 2026 Samedh Sachin Kari</p>
+        </div>
+    </footer>
+</body>
+</html>
